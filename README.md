@@ -12,11 +12,13 @@ def deps do
 end
 ```
 
-To run webpack as a watcher while the development server is running, edit `watchers` option in `config/dev.exs`:
+To run webpack as a watcher while the development server is running, edit the `watchers` option in `config/dev.exs`:
 
 ```elixir
 config :your_app, YourAppWeb.Endpoint,
-  # ...all the other options
+  # ...
+  # all the other options
+  # ...
   watchers: [npm: ["run", "watch"]]
 ```
 
