@@ -1,4 +1,4 @@
-defmodule Mix.Tasks.Phx.TailwindVue do
+defmodule Mix.Tasks.PhxTailwindVue.Assets do
   @moduledoc """
   Installs Tailwindcss and Vue in a Phoenix project.
   """
