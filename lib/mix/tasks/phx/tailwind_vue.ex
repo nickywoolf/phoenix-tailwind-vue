@@ -5,8 +5,6 @@ defmodule Mix.Tasks.Phx.TailwindVue do
 
   use Mix.Task
 
-  @shortdoc "Installs Tailwindcss and Vue in a Phoenix project."
-
   @directories [
     "assets/css",
     "assets/js/components"
@@ -22,6 +20,7 @@ defmodule Mix.Tasks.Phx.TailwindVue do
     {"assets/js/components/Hello.vue", "assets/js/components/Hello.vue"}
   ]
 
+  @shortdoc "Installs Tailwindcss and Vue in a Phoenix project."
   def run(_args) do
     Enum.each(@directories, &make_directory/1)
     Enum.each(@assets, &copy_file/1)
