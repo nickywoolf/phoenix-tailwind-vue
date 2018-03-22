@@ -23,7 +23,7 @@ end
 Grap the project and install a thousand npm packages.
 
 ```bash
-$ mix deps.get && mix phx.tailwind_vue
+$ mix deps.get && mix phx_tailwind_vue.assets
 ```
 
 To run webpack as a watcher while the development server is running, edit the `watchers` option in `config/dev.exs`:
