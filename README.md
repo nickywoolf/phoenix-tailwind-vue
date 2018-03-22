@@ -20,7 +20,7 @@ def deps do
 end
 ```
 
-Get the dependencies and install a thousand npm packages.
+Grap the project and install a thousand npm packages.
 
 ```bash
 $ mix deps.get && mix phx.tailwind_vue
