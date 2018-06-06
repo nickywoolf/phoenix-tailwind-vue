@@ -2,10 +2,10 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const path = require('path')
 
 module.exports = {
-  entry: './assets/js/app.js',
+  entry: './js/app.js',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, './priv/static/js')
+    path: path.resolve(__dirname, '../priv/static/js')
   },
   module: {
     rules: [
