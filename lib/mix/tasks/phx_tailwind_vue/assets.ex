@@ -23,8 +23,8 @@ defmodule Mix.Tasks.PhxTailwindVue.Assets do
   end
 
   defp initialize_tailwind() do
-    "./node_modules/.bin/tailwind"
+    "./assets/node_modules/.bin/tailwind"
     |> Path.expand()
-    |> System.cmd(["init"], cd: "assets")
+    |> System.cmd(["init"], cd: "./assets")
   end
 end
