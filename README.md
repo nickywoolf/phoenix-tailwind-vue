@@ -33,7 +33,7 @@ config :your_app, YourAppWeb.Endpoint,
   # ...
   # all the other options
   # ...
-  watchers: [npm: ["run", "watch", ch: Path.expand("../assets", __DIR__)]]
+  watchers: [npm: ["run", "watch", cd: Path.expand("../assets", __DIR__)]]
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
