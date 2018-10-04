@@ -19,12 +19,12 @@ defmodule Mix.Tasks.PhxTailwindVue.Assets do
   end
 
   defp install_packages() do
-    System.cmd("npm", ["install"], cd: "assets")
+    System.cmd("npm", ["install"])
   end
 
   defp initialize_tailwind() do
-    "./assets/node_modules/.bin/tailwind"
+    "./node_modules/.bin/tailwind"
     |> Path.expand()
-    |> System.cmd(["init"], cd: "./assets")
+    |> System.cmd(["init"])
   end
 end
