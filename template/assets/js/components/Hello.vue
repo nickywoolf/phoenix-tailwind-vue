@@ -3,9 +3,5 @@
 </template>
 
 <script>
-export default {
-    mounted() {
-        console.log('Hello again!')
-    }
-}
+export default {};
 </script>
