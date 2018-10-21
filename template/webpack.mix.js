@@ -3,7 +3,8 @@ const mix = require("laravel-mix")
 require("laravel-mix-tailwind")
 require("laravel-mix-purgecss")
 
-mix.js("assets/js/app.js", "priv/static/js")
+mix.setPublicPath(path.resolve('./priv/static'))
+    .js("assets/js/app.js", "priv/static/js")
     .postCss("assets/css/app.css", "priv/static/css")
     .tailwind()
     .purgeCss({
@@ -16,5 +17,5 @@ mix.js("assets/js/app.js", "priv/static/js")
     })
 
 if (mix.inProduction()) {
-    // mix.version()
+    mix.version()
 }
