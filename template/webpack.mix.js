@@ -3,7 +3,7 @@ const mix = require("laravel-mix")
 require("laravel-mix-tailwind")
 require("laravel-mix-purgecss")
 
-mix.setPublicPath(path.resolve('./priv/static'))
+mix.setPublicPath(path.resolve('./'))
     .js("assets/js/app.js", "priv/static/js")
     .postCss("assets/css/app.css", "priv/static/css")
     .tailwind()
