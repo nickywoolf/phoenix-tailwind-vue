@@ -1,10 +1,13 @@
+const glob = require('glob')
 const path = require('path')
 new CopyWebpackPlugin = require('copy-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 module.exports = (env, options) => ({
-  entry: './js/app.js',
+  entry: {
+    './js/app.js': ['./js/app.js'].concat(glob.sync('./vendor/**/*.js'))
+  },
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, '../priv/static/js')
