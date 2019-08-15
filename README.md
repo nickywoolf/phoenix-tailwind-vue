@@ -22,7 +22,7 @@ Grab this package and install npm packages.
 $ mix deps.get && mix phx_tailwind_vue.assets
 ```
 
-You're ready to rock 'n roll!
+You're ready to rock 'n' roll!
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
