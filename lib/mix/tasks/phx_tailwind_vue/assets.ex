@@ -18,6 +18,6 @@ defmodule Mix.Tasks.PhxTailwindVue.Assets do
   end
 
   defp install_packages() do
-    System.cmd("npm", ["install"])
+    System.cmd("npm", ["install"], cd: "assets")
   end
 end
