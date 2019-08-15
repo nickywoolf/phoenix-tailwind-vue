@@ -9,7 +9,6 @@ defmodule Mix.Tasks.PhxTailwindVue.Assets do
   def run(_args) do
     copy_files()
     install_packages()
-    initialize_tailwind()
   end
 
   defp copy_files() do
@@ -20,11 +19,5 @@ defmodule Mix.Tasks.PhxTailwindVue.Assets do
 
   defp install_packages() do
     System.cmd("npm", ["install"])
-  end
-
-  defp initialize_tailwind() do
-    "./node_modules/.bin/tailwind"
-    |> Path.expand()
-    |> System.cmd(["init"])
   end
 end
